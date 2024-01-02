@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #c8b6ff;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 130px;
+    color: chocolate;
+    text-decoration: underline red;
+    text-transform: uppercase;
+    /* margin-top: 30px; */
+}
+
+.container {
+    height: 90vmin;
+    width: 100vmax;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box {
+    height: 35vmin;
+    width: 90vmin;
+    background-color: #e7c6ff;
+    border: 2px solid #b8c0ff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 20px 2px #bbd0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    /* box-shadow: inset 1px 20px 2px #7f9ad5; */
+    transition: all ease-in 0.2s;
+}
+
+.quote-text {
+    font-size: 1.4rem;
+    color: peru;
+    text-align: center;
+    font-weight: 900;
+    width: 95%;
+    /* -webkit-text-stroke-width: 0.5px; */
+    /* -webkit-text-stroke-color: #000; */
+    /* text-shadow: 2px 2px 8px #888888; */
+}
+
+.quote-btn {
+    border: none;
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 7px;
+    background-color: #b8c0ff;
+    transition: all ease 0.3s;
+}
+
+.quote-btn:hover {
+    background-color: #bbd0ff;
+    color: blueviolet;
+}
+
+/* Media Query for Tablets */
+@media screen and (max-width: 768px) {
+    .quote-box {
+        width: 80vmin;
+        /* Adjusted width for smaller screens */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .quote-box {
+        width: 70vmin;
+        /* Further adjusted width for smaller screens */
+    }
+
+    h1 {
+        top: 80px;
+        /* Adjusted position for smaller screens */
+    }
+}
